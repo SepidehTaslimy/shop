@@ -5,6 +5,10 @@ $(document).ready(function(){
       $(this).addClass("active-link");
     });
 
+    // AOS initialize
+    setTimeout(() => {
+        AOS.init();
+    }, 120);
 
     $('#about .section-title').attr({
         "data-aos": "zoom-out",
@@ -14,10 +18,6 @@ $(document).ready(function(){
       "data-aos": "fade-up",
       "data-aos-duration": "2000"
   });
-
-    setTimeout(() => {
-        AOS.init();
-    }, 120);
 
     $('.counter-value').each(function(){
       $(this).prop('Counter',0).animate({

@@ -12,15 +12,16 @@ $C-gold-gradi-glass: linear-gradient(180deg, rgb(246, 221, 0) 0%, rgb(180, 139, 
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-/*@font-face {
-  //todo for farsi
-}*/
+@font-face {
+  font-family: IRANSans;
+  src: url(/assets/font/FontsFree-Net-ir_sans.woff);
+}
 
 /*--------------------------------------------------------------
 # body
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", IRANSans;
   color: #ffffff;
   height: 4400px;
 
@@ -40,7 +41,7 @@ body {
   h4,
   h5,
   h6 {
-    font-family: "Raleway", sans-serif;
+    font-family: "Raleway", IRANSans;
   }
 
   section {
